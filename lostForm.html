@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+
+<style>
+    .input-group {
+        padding: 50px;
+        position: relative;
+        top: -25px;
+    }
+
+    h2 {
+        font-size: 30px;
+        position: relative;
+        top: 60px;
+    }
+
+    #name {
+        margin-top: 100px;
+    }
+
+    #submit {
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="form-box">
+        <form class="input-group">
+            <h2>Report Lost Item</h2>
+            <input type="text" class="input-field" id="name" placeholder="Your Name" required>
+            <input type="email" class="input-field" placeholder="Your Email" required>
+            <input type="text" class="input-field" placeholder="Lost Item Description" required>
+            <input type="text" class="input-field" placeholder="Last Known Location" required>
+            <button type="submit" class="submit-btn" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

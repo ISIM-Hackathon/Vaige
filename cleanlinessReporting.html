@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleanliness Report</title>
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+
+<style>
+    .input-group {
+        /* padding-left: 50px; */
+        position: relative;
+        top: 80px;
+    }
+
+    .form-box {
+        padding-left: 50px;
+        position: relative;
+        top: -25px;
+    }
+
+    h2 {
+        font-size: 30px;
+        position: relative;
+        top: 60px;
+    }
+
+    #name {
+        margin-top: 100px;
+    }
+
+    #submit {
+        margin-top: 20px;
+    }
+
+    /* Style the icons */
+    .submit-btn i,
+    .file-label i {
+        margin-right: 5px;
+    }
+
+    .input-field[type="file"] {
+        display: none;
+        /* Hide the original file input field */
+    }
+
+    .file-label {
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+        color: #0056b3;
+        padding: 10px 20px;
+        padding-left: 0px;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+</style>
+
+<body>
+    <div class="form-box">
+        <h2>Cleanliness Report</h2>
+        <form id="cleanliness-report-form" class="input-group">
+            <input type="text" class="input-field" placeholder="Your Name" required>
+            <input type="email" class="input-field" placeholder="Your Email" required>
+            <input type="text" class="input-field" placeholder="Location of Cleanliness Issue" required>
+            <textarea class="input-field" placeholder="Description of Cleanliness Issue" rows="4" required></textarea>
+            <div class="rating">
+                <span>Rate the Cleanliness:</span>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1"><i class="fas fa-star"></i></label>
+            </div>
+            <label for="file-upload" class="file-label" class="submit-btn">
+                <i class="fas fa-file-upload"></i> Upload Image
+                <input type="file" class="input-field" id="file-upload" accept="image/*" required>
+            </label>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-check-circle"></i> Submit Report
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
